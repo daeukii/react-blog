@@ -1,9 +1,17 @@
 import React from 'react'
 import BoardCard from '../components/BoardCard'
+import Button from 'react-bootstrap/esm/Button'
+import { useNavigate } from 'react-router-dom'
 
 export default function Boardlist({boardlist}) {
+  const navigate = useNavigate();
+
   return (
     <div >
+      <Button 
+      onClick={()=>{navigate('/boardform')}}>
+        게시글 작성
+      </Button>
       { // 배열을 이용하여 화면에 출력할수 있다
         // map() : return 값을 배열로 전달 
         // {}안에서 return 값은 화면에 바로 출력된다

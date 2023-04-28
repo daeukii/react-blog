@@ -1,7 +1,10 @@
 import React from 'react'
+import SimpleSlider from '../components/SimpleSlider'
 
-export default function HomePage() {
+export default function Home() {
   return (
-    <div>HomePage</div>
+    <div>
+      <SimpleSlider />
+    </div>
   )
 }
